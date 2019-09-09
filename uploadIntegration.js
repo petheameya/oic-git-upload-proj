@@ -5,7 +5,7 @@ var uploadIntFile = require('./uploadFileToGit');
 
 var integrationVersion = process.argv[6]; //'1.0';
 var integrationName = process.argv[5]; //"LOADPDHEMEABULKUPDATESBETA";
-var oicUrl = process.argv[4] + ':443/ic/api/integration/v1/integrations/'; //"https://swoicdev1-sherwinwilliamsoci.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/integrations/";
+var oicUrl = process.argv[4] + ':443/ic/api/integration/v1/integrations/';
 var gitRepo = process.argv[9]; //"OicTestRepo";
 var authToken = process.argv[7];
 var repoOrg = process.argv[8]; //"SW-GSC-IT";
