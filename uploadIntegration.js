@@ -3,14 +3,14 @@ var downloadInt = require('./downloadIntegrationModule');
 var checkRepo = require('./checkRepoExistsGitApi');
 var uploadIntFile = require('./uploadFileToGit');
 
-var integrationVersion = '1.0';
-var integrationName = "LOADPDHEMEABULKUPDATESBETA";
-var oicUrl = "https://swoicdev1-sherwinwilliamsoci.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/integrations/";
-var gitRepo = "OicTestRepo";
-var authToken = "9807913a004842f99e7bf78ef7e49180e183d85f";
-var repoOrg = "SW-GSC-IT";
-var oicUserName = "Geaintsoadev1";
-var oicPassword = "SellmorepaintSOA18*";
+var integrationVersion = process.argv[6]; //'1.0';
+var integrationName = process.argv[5]; //"LOADPDHEMEABULKUPDATESBETA";
+var oicUrl = process.argv[4] + ':443/ic/api/integration/v1/integrations/'; //"https://swoicdev1-sherwinwilliamsoci.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/integrations/";
+var gitRepo = process.argv[9]; //"OicTestRepo";
+var authToken = process.argv[7];
+var repoOrg = process.argv[8]; //"SW-GSC-IT";
+var oicUserName = process.argv[2];
+var oicPassword = process.argv[3];
 var branch = "master";
 var checkinComment = "Test checkin comment";
 
